@@ -1,6 +1,11 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module';
+
+function require(moduleName: string) {
+  
+}
+
 const cookieSession = require('cookie-session');
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
